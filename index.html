@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<img id="logo" src="omg/ChoosTransInterlacedHD.png" alt="Logo">
+<img id="logo" src="img/ChoosTransInterlacedHD.png" alt="Logo">
 <img id="logo2" src="img/logogroen.png" alt="Logo2">
 <div class="message-wrapper" style="margin-top: 15px">
 <div id="MyPhp">
@@ -23,8 +23,7 @@ window.onload = function() {
  $(document).ready(function() {
    var refreshId = setInterval(function() {
    document.getElementById('bottom').scrollIntoView();
-      $("#MyPhp").load('berichten.php');
-
+     $("#MyPhp").load('berichten.php');
    }, 1000);
    $.ajaxSetup({ cache: false });
 });
