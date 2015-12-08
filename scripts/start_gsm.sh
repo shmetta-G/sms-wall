@@ -1,0 +1,1 @@
+service gammu-smsd restart
