@@ -16,7 +16,7 @@ body {
 header {					
   color: #CFD8DC;				/*kleur van de tekst van de header*/
   background: #455A64;				/*achtergrondkleur header*/
-  box-shadow: 0 5px 10px rgba(0,0,0,0.29);	
+  box-shadow: 0 4px 5px 0px rgba(0,0,0,0.3);	
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.30);
   height: 7%;					/*hoogte van de header*/
   text-align: center;	
@@ -30,28 +30,18 @@ header {
   padding-top: 5;
 }
 
-/*logos should fall within 5-35% width, 10-50% height*/
-#logowrapper {
-    width:38%;
-    height:50%;
-    position: fixed;
-    top: 10%;
-    left: 3%;
-    background-color: #CFD8DC;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.29);	
-}
-
 .logo {
     height:auto;
     position: fixed;   
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter:         drop-shadow(5px 5px 5px #222); 
+    -webkit-filter: drop-shadow(2px 2px 2px #111);
+    filter:         drop-shadow(2px 2px 2px #111); 
 }
 
 #choos{
     width:29%;
     top: 10%;
     left: 0%;
+
 }
 
 #sono{
@@ -73,7 +63,7 @@ header {
     position: relative;
     color: #212121;				/*kleur van de tekst*/
     font-size: 150%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
     background-color: #CFD8DC;			/*kleur van de kleine tekstballonnetjes*/
 }
 

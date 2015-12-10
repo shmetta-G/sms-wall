@@ -1,6 +1,5 @@
 <?php
-	$displayMessages = 9;
-	$bigMessages=0;
+	$displayMessages = 12;
 	$displayIndex=0;
 	$db = new SQLite3('/var/spool/gammu/db.sqlite');
 	$results = $db->query("SELECT * FROM (SELECT * FROM inbox ORDER BY UpdatedInDB DESC LIMIT 0,${displayMessages}) ORDER BY UpdatedInDB ASC");
