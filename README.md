@@ -14,4 +14,4 @@ Go to the sms-wall directory and start a PHP server using the command
 
 The interface can now be seen by browsing to localhost:80 in your favourite browser 
 
-
+to get an example database, simply copy `db/db.sqlite`to `/var/spool/gammu`
