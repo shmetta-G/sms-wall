@@ -1,42 +1,33 @@
 <html>
-<head>
+	<head>
 
-<title> sms-wall </title>
-<script src="jquery-1.11.2.min.js"></script>
-<script src="jquery-migrate-1.2.1.min.js"></script>
+		<title> sms-wall </title>
+		<script src="jquery-1.11.2.min.js"></script>
+		<script src="jquery-migrate-1.2.1.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="icon" type="image/png" href="img/sms.png">
-<meta charset="UTF-8">
-</head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/png" href="img/sms.png">
+		<meta charset="UTF-8">
+	</head>
 
-<body>
-<header>
-  <h1>
-    SMS WALL - 0478 012 970 - SMS WALL 
-  </h1>
-</header>
-<img id="logo" src="img/ChoosTransInterlacedHD.png" alt="Logo">
-<img id="logo2" src="img/logogroen.png" alt="Logo2">
-<div class="message-wrapper" style="margin-top: 15px">
-<div id="MyPhp">
-
-
-<script>
-window.onload = function() {
-	$("#MyPhp").load('berichten.php');
-}
- $(document).ready(function() {
-   var refreshId = setInterval(function() {
-   document.getElementById('bottom').scrollIntoView();
-     $("#MyPhp").load('berichten.php');
-   }, 1000);
-   $.ajaxSetup({ cache: false });
-});
-</script>
-</div>
-</div>
-</body>
-<div id="bottom"></div>
+	<body>
+		<header> SMS WALL - 0478 012 970 - SMS WALL </header>
+		<img id="logo" src="img/ChoosTransInterlacedHD.png" alt="Logo">
+		<!-- <img id="logo2" src="img/logogroen.png" alt="Logo2"> -->
+		<div id="MyPhp">
+			<script>
+				window.onload = function() {
+					$("#MyPhp").load('berichten.php');
+				}
+				 $(document).ready(function() {
+				   var refreshId = setInterval(function() {
+				   document.getElementById('bottom').scrollIntoView();
+				     $("#MyPhp").load('berichten.php');
+				   }, 1000);
+				   $.ajaxSetup({ cache: false });
+				});
+			</script>
+		</div>
+	</body>
 </html>
 

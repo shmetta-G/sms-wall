@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# This script installs and setups everything necessary for the dj rating
+# This script installs and setups everything necessary for the sms-wall
 # system. It assumes you have root access.
 #
 # The sms inbox and sent folder can be found in resp. /var/spool/gammu/inbox/
@@ -26,10 +26,11 @@ cat > /etc/gammu-smsdrc <<EOF
 # Gammu library configuration, see gammurc(5)
 [gammu]
 #port = /dev/ttyS0
+#port = /dev/bus/usb/003/022
 #connection = fbus
-#model = 3310
-port = /dev/bus/usb/001/004
-connection = fbus
+port = /dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0
+connection = fbuspl2303
+model = 3310
 
 # SMSD configuration, see gammu-smsdrc(5)
 [smsd]
