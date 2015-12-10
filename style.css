@@ -30,25 +30,41 @@ header {
   padding-top: 5;
 }
 
-#logo{						/*instellingen van het logo*/
-    width:550px;
-    height:auto;
+/*logos should fall within 5-35% width, 10-50% height*/
+#logowrapper {
+    width:38%;
+    height:50%;
     position: fixed;
-    top: 200px;
-    left: 5%;
-    background-color: #FFFFFF;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    top: 10%;
+    left: 3%;
+    background-color: #CFD8DC;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.29);	
 }
 
-/*
-#logo2{
-    width: 20px;
+.logo {
     height:auto;
-    position: fixed;
-    top: 1px;
-    left: 1px;
+    position: fixed;   
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222); 
 }
-*/
+
+#choos{
+    width:29%;
+    top: 10%;
+    left: 0%;
+}
+
+#sono{
+    width: 15%;
+    top: 33%;
+    left: 8%;
+}
+
+#zeus{
+    width: 20%;
+    top: 66%;
+    left: 5%;
+}
 
 .message {
     border-radius: 5px 5px 5px 5px;
@@ -62,11 +78,7 @@ header {
 }
 
 .message.to {
-    margin-left: 43%;				/*plaats over van de linker zijde*/
-}
-
-.message.big {
-    margin-left: 3%; 				/*Fix this to text length*/
+    margin-left: 30%;				/*plaats over van de linker zijde*/
 }
 
 .timestamp {
