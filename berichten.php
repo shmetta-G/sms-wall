@@ -1,5 +1,5 @@
 <?php
-	$displayMessages = 10;
+	$displayMessages = 9;
 	$bigMessages=3;
 	$displayIndex=0;
 	$db = new SQLite3('/var/spool/gammu/db.sqlite');

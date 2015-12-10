@@ -13,52 +13,23 @@ body {
     overflow-X: hidden;	
 }
 
-.timestamp {
-    margin: 0;
-    color: #727272;				/*kleur van het uur origineel:#ADD8FF*/
-    font-size: 60%;
-}
-
 header {					
   color: #CFD8DC;				/*kleur van de tekst van de header*/
   background: #455A64;				/*achtergrondkleur header*/
   box-shadow: 0 5px 10px rgba(0,0,0,0.29);	
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.30);
-  height: 80px;					/*hoogte van de header*/
+  height: 7%;					/*hoogte van de header*/
   text-align: center;	
-  font-size: 350%;	
+  font-size: 250%;	
   font-weight: bold;		
-  line-height: 53px;				
+  line-height: 50px;				
   white-space: nowrap;
   position:fixed;
-  display:block;
   width:100%;
   z-index:1;
+  padding-top: 5;
 }
 
-.message {
-    border-radius: 5px 5px 5px 5px;
-    margin: 0px 15px 15px 0px;			/*plaats tussen de ballonnetjes*/
-    padding: 10px 20px;
-    position: relative;
-    color: #212121;				/*kleur van de tekst*/
-}
-
-.message.to {
-    background-color: #CFD8DC;			/*kleur van de kleine tekstballonnetjes*/
-    margin-left: 43%;				/*plaats over van de linker zijde*/
-    font-size: 30px;
-    line-height: 31px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.message.big {
-    line-height: 41px;
-    font-size: 40;
-    background-color: #CFD8DC;			/*kleur van de grote teksballonnetjes*/
-    margin-left: 80px; 				/*Fix this to text length*/
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
 #logo{						/*instellingen van het logo*/
     width:550px;
     height:auto;
@@ -68,6 +39,7 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
 /*
 #logo2{
     width: 20px;
@@ -77,3 +49,29 @@ header {
     left: 1px;
 }
 */
+
+.message {
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px 15px 15px 0px;			/*plaats tussen de ballonnetjes*/
+    padding: 10px 20px;
+    position: relative;
+    color: #212121;				/*kleur van de tekst*/
+    font-size: 150%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #CFD8DC;			/*kleur van de kleine tekstballonnetjes*/
+}
+
+.message.to {
+    margin-left: 43%;				/*plaats over van de linker zijde*/
+}
+
+.message.big {
+    margin-left: 3%; 				/*Fix this to text length*/
+}
+
+.timestamp {
+    margin: 0;
+    color: #727272;				/*kleur van het uur origineel:#ADD8FF*/
+    font-size: 60%;
+}
+

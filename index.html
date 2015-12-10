@@ -14,18 +14,16 @@
 		<header> SMS WALL - 0478 012 970 - SMS WALL </header>
 		<img id="logo" src="img/ChoosTransInterlacedHD.png" alt="Logo">
 		<!-- <img id="logo2" src="img/logogroen.png" alt="Logo2"> -->
-		<div id="MyPhp">
+		<div id="msg-wrapper">
 			<script>
-				window.onload = function() {
-					$("#MyPhp").load('berichten.php');
-				}
-				 $(document).ready(function() {
-				   var refreshId = setInterval(function() {
-				   document.getElementById('bottom').scrollIntoView();
-				     $("#MyPhp").load('berichten.php');
-				   }, 1000);
-				   $.ajaxSetup({ cache: false });
-				});
+                $(document).ready(function() {
+                    var refreshId = setInterval(function() {
+                        $("#msg-wrapper").load('berichten.php', function() {
+                            $(".message").last()[0].scrollIntoView();    
+                        });
+                    }, 1000);
+                    $.ajaxSetup({ cache: false });
+                });
 			</script>
 		</div>
 	</body>
