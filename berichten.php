@@ -1,5 +1,5 @@
 <?php
-	$displayMessages = 8;
+	$displayMessages = 10;
 	$displayIndex=0;
 	$db = new SQLite3('db/db.sqlite');
 	$results = $db->query("SELECT * FROM (SELECT * FROM inbox ORDER BY UpdatedInDB DESC LIMIT 0,${displayMessages}) ORDER BY UpdatedInDB ASC");
