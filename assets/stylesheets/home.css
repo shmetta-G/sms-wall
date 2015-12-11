@@ -22,8 +22,8 @@ body {
 
 nav.navbar.navbar-default.navbar-fixed-top {
   height: 64px;
-  color: #CFD8DC;
-  background-color: #455A64;
+  color: #000;
+  background-color: #F5F5F5;
   border: 0px;
   border-radius: 0px;
   -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
@@ -32,7 +32,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 
 html > body {
-  background-color: #607D8B;
+  background-color: #E5E5E5;
 }
 
 .container.content {
