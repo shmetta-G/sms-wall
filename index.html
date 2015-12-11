@@ -2,8 +2,9 @@
 	<head>
 
 		<title> sms-wall </title>
-		<script src="jquery-1.11.2.min.js"></script>
-		<script src="jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/home.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/png" href="img/sms.png">
@@ -16,17 +17,6 @@
 	    <img class="logo" id="sono" src="img/sono.png" alt="Logo2">
 	    <img class="logo" id="zeus" src="img/zeus.png" alt="Logo3">
 		<div id="msg-wrapper">
-			<script>
-                $(document).ready(function() {
-                    var refreshId = setInterval(function() {
-                        $("#msg-wrapper").load('berichten.php', function() {
-                            $(".message").last()[0].scrollIntoView();    
-                        });
-                    }, 1000);
-                    $.ajaxSetup({ cache: false });
-                });
-			</script>
 		</div>
 	</body>
 </html>
-

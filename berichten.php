@@ -1,7 +1,7 @@
 <?php
 	$displayMessages = 12;
 	$displayIndex=0;
-	$db = new SQLite3('/var/spool/gammu/db.sqlite');
+	$db = new SQLite3('db/db.sqlite');
 	$results = $db->query("SELECT * FROM (SELECT * FROM inbox ORDER BY UpdatedInDB DESC LIMIT 0,${displayMessages}) ORDER BY UpdatedInDB ASC");
 	while($row = $results->fetchArray()) {
 		if ($displayIndex < $displayMessages - $bigMessages) {
