@@ -1,0 +1,24 @@
+.logo {
+  height:auto;
+  position: fixed;
+  -webkit-filter: drop-shadow(2px 2px 2px #111);
+  filter:         drop-shadow(2px 2px 2px #111);
+}
+
+#choos {
+  width:29%;
+  top: 10%;
+  left: 0%;
+}
+
+#sono {
+  width: 15%;
+  top: 33%;
+  left: 8%;
+}
+
+#zeus {
+  width: 20%;
+  top: 66%;
+  left: 5%;
+}

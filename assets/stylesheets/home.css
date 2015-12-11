@@ -1,0 +1,35 @@
+@import "https://fonts.googleapis.com/css?family=Roboto";
+::-webkit-scrollbar{
+    display:none;
+}
+@font-face {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #607D8B;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    overflow-X: hidden;
+}
+
+header {
+  color: #CFD8DC;				/*kleur van de tekst van de header*/
+  background: #455A64;				/*achtergrondkleur header*/
+
+	border: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
+	-moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.26);
+
+  height: 64px;					/*hoogte van de header*/
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 64px;
+  white-space: nowrap;
+  position: absolute;
+  width:100%;
+  z-index:1;
+}
