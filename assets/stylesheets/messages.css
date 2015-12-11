@@ -1,20 +1,14 @@
-.message {
-  border-radius: 5px;
-  margin: 0px 15px 15px 0px;			/*plaats tussen de ballonnetjes*/
-  padding: 10px 20px;
-  position: relative;
-  color: #212121;				/*kleur van de tekst*/
-  font-size: 150%;
-  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
-  background-color: #CFD8DC;			/*kleur van de kleine tekstballonnetjes*/
-}
-
-.message.to {
-  margin-left: 30%;				/*plaats over van de linker zijde*/
-}
-
 .timestamp {
   margin: 0;
+  font-size: 20px;
   color: #727272;				/*kleur van het uur origineel:#ADD8FF*/
-  font-size: 60%;
+}
+
+.panel.panel-default {
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.panel-body > span {
+  font-size: 24px;
 }
