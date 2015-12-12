@@ -7,6 +7,9 @@
 
 		echo "<div class='panel panel-default'>";
 			echo "<div class='panel-body'>";
+				echo "<div class=\"thumbnail sms col-md-1\">";
+					echo "<img src=\"assets/images/msg.png\" alt=\"sms\">";
+				echo "</div>";
 				$splitted = explode(" ", $row['UpdatedInDB']);
 				echo "<span class=\"sms\">";
 				echo $row['TextDecoded'];

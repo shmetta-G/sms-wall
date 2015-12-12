@@ -12,3 +12,10 @@
   font-size: 16px;
   color: #727272;				/*kleur van het uur origineel:#ADD8FF*/
 }
+
+.thumbnail.sms {
+  border: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
