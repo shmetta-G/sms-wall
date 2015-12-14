@@ -3,12 +3,12 @@
   margin: 0px;
 }
 
-.panel-body > span {
+.panel-body > div > span {
   font-size: 24px;
 }
 
-.panel-body > span.timestamp {
-  margin: 0;
+.panel-body > div > span.timestamp {
+  margin: 0px;
   font-size: 16px;
   color: #727272;				/*kleur van het uur origineel:#ADD8FF*/
 }
@@ -18,4 +18,9 @@
   padding-bottom: 0px;
   margin-bottom: 0px;
   margin-right: 10px;
+}
+
+div.col-md-9.messages {
+  padding-left: 30px;
+
 }
