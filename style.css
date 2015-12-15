@@ -20,14 +20,14 @@ header {
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.30);
   height: 7%;					/*hoogte van de header*/
   text-align: center;	
-  font-size: 250%;	
+  font-size: 300%;	
   font-weight: bold;		
-  line-height: 50px;				
+  line-height: 60px;				
   white-space: nowrap;
   position:fixed;
   width:100%;
   z-index:1;
-  padding-top: 5;
+  padding-top: 10;
 }
 
 .logo {
@@ -62,7 +62,7 @@ header {
     padding: 10px 20px;
     position: relative;
     color: #212121;				/*kleur van de tekst*/
-    font-size: 150%;
+    font-size: 220%;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
     background-color: #CFD8DC;			/*kleur van de kleine tekstballonnetjes*/
 }
@@ -74,6 +74,6 @@ header {
 .timestamp {
     margin: 0;
     color: #727272;				/*kleur van het uur origineel:#ADD8FF*/
-    font-size: 60%;
+    font-size: 80%;
 }
 
