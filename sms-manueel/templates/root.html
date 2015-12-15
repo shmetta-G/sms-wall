@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+<form action="/" method="post">
+  <p><input type="text" name=text></p>
+  <p><input type="submit" value="Stuur"></p>
+</form>
+Messages <br>
+Number of messages: {{messages|count}}<br>
+{% for m in messages %}
+ {{m.TextDecoded}} <br/>
+{% endfor %}
+</body>
+</html>

@@ -1,27 +1,34 @@
-from __future__ import unicode_literals
+from datetime import datetime
 
-from flask import Flask
-from sqlalchemy import create_engine
-from sqlalchemy.orm import Session
-from sqlalchemy.ext.automap import automap_base
+from flask import Flask, redirect, url_for, request, render_template
+from flask_wtf import Form
+from wtforms import TextField
+from pony.orm import *
+
+from settings import *
+
 app = Flask(__name__)
+db = Database('sqlite', DATABASE_URL, create_db=True)
 
-import sys
-sys.setdefaultencoding('utf-8')
+class Inbox(db.Entity):
+    TextDecoded = Required(str)
+    UpdatedInDB = Required(datetime)
 
-Base = automap_base()
-engine = create_engine('sqlite:///../db/db.sqlite')
-# Reflect the tables
-Base.prepare(engine, reflect=True)
-
-Inbox = Base.classes.inbox
-
-session = Session(engine)
+db.generate_mapping(create_tables=True)
 
 @app.route('/')
 def root():
-    l = len(session.query(Inbox).all())
-    return "Hello World" + str(l)
+    with db_session:
+        messages = select(p for p in Inbox)
+        return render_template('root.html', messages=messages)
+
+@app.route('/', methods=['POST'])
+def add_message():
+    text = request.form['text']
+    with db_session:
+        message = Inbox(TextDecoded=text, UpdatedInDB=datetime.now())
+
+    return redirect(url_for('root'))
 
 if __name__ == "__main__":
     app.run(debug=True)
