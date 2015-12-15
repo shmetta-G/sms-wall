@@ -1,8 +1,6 @@
 from datetime import datetime
 
 from flask import Flask, redirect, url_for, request, render_template
-from flask_wtf import Form
-from wtforms import TextField
 from pony.orm import *
 
 from settings import *
